@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JWH4720J9F"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JWH4720J9F');
+</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume | Sheikh Faiz — Digital Marketing &amp; Growth Manager</title>
+    <meta name="description" content="Resume of Sheikh Faiz — Digital Marketing &amp; Growth Manager: performance marketing, Google Ads, Meta Ads, SEO, lead generation, marketing automation, AI campaigns and UI/UX.">
+    <meta property="og:title" content="Sheikh Faiz | ATS-Friendly Resume">
+    <meta property="og:description" content="Digital Marketing &amp; Growth Manager specialising in performance marketing, Google Ads, Meta Ads, SEO, lead generation, marketing automation and AI-powered campaigns.">
+    <!-- Tailwind CSS for responsive UI -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Poppins (Headers) & Roboto (Body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Roboto:wght@400;500;700&family=Playfair+Display:wght@600;700;800&family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Include html2pdf.js for direct PDF download -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <style>
+        :root {
+            --text-main: #111827; /* Gray 900 */
+            --text-muted: #374151; /* Gray 700 */
+            --accent: #3730a3; /* Indigo 800 */
+            --accent-light: #c7d2fe; /* Indigo 200 */
+        }
+        
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f3f4f6; /* Gray 100 */
+            color: var(--text-main);
+            line-height: 1.35;
+        }
+
+        /* A4 Page Layout */
+        .resume-page {
+            width: 210mm;
+            min-height: 297mm;
+            background: #ffffff;
+            margin: 1.5rem auto;
+            padding: 8mm 12mm;
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+            box-sizing: border-box;
+            position: relative;
+        }
+
+        /* Resume Specific Typography using Poppins & Roboto */
+        .resume-text {
+            font-size: 9pt;
+            color: var(--text-muted);
+            font-family: 'Roboto', sans-serif;
+        }
+        
+        h1, h2, h3, .section-header, .job-title, .company-name {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .section-header {
+            color: var(--accent);
+            font-size: 10pt;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            border-bottom: 1.5px solid var(--accent-light);
+            padding-bottom: 1px;
+            margin-top: 6px;
+            margin-bottom: 4px;
+        }
+
+        .job-title {
+            font-weight: 700;
+            color: var(--text-main);
+            font-size: 9.5pt;
+        }
+        
+        .company-name {
+            font-weight: 600;
+            font-size: 9pt;
+        }
+
+        .bullet-list {
+            list-style-type: disc;
+            padding-left: 14px;
+            margin-top: 2px;
+        }
+
+        .bullet-list li {
+            margin-bottom: 2px;
+        }
+        
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .link-hover:hover {
+            color: var(--accent);
+            text-decoration: underline;
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 800px) {
+            .resume-page {
+                width: 100%;
+                margin: 0;
+                padding: 1.5rem 1rem;
+                box-shadow: none;
+                min-height: auto;
+            }
+        }
+
+        /* Print Specific Styles - Crucial for PDF Export */
+        @page {
+            size: A4 portrait;
+            margin: 0;
+        }
+
+        @media print {
+            body {
+                background: white !important;
+                margin: 0;
+                padding: 0;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+            .no-print {
+                display: none !important;
+            }
+            .resume-page {
+                margin: 0 !important;
+                padding: 8mm 12mm !important;
+                box-shadow: none;
+                width: 100%;
+                min-height: 100vh;
+                page-break-after: avoid;
+            }
+            a {
+                color: var(--text-main) !important;
+                text-decoration: none !important;
+            }
+        }
+        
+        #toast {
+            visibility: hidden;
+            min-width: 250px;
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 12px;
+            position: fixed;
+            z-index: 50;
+            left: 50%;
+            bottom: 30px;
+            transform: translateX(-50%);
+            font-size: 14px;
+            opacity: 0;
+            transition: opacity 0.3s, bottom 0.3s;
+        }
+        #toast.show {
+            visibility: visible;
+            opacity: 1;
+            bottom: 50px;
+        }
+    
+/* ===== UNIFIED HEADER / FOOTER SYSTEM ===== */
+:root{--maxw:1200px}
+.nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:14px 0;background:rgba(251,250,255,.7);backdrop-filter:blur(22px);-webkit-backdrop-filter:blur(22px);border-bottom:1px solid rgba(91,61,245,.08);transition:box-shadow .4s,background .4s;display:block}
+.nav.scrolled{box-shadow:0 6px 32px rgba(91,61,245,.1);background:rgba(251,250,255,.92)}
+.nav-inner{max-width:var(--maxw);width:100%;margin:0 auto;padding:0 clamp(20px,5vw,40px);display:flex;align-items:center;justify-content:space-between}
+.nav-logo{display:flex;align-items:center;gap:12px}
+.nav-logo-mark{width:42px;height:42px;border-radius:12px;background:linear-gradient(135deg,var(--pl),var(--pd));display:flex;align-items:center;justify-content:center;font-family:var(--fd);font-weight:800;font-size:1.1rem;color:#fff;box-shadow:0 8px 22px rgba(91,61,245,.4);transition:transform .3s}
+.nav-logo:hover .nav-logo-mark{transform:rotate(-6deg) scale(1.08)}
+.nav-logo-name{font-family:var(--fu);font-weight:700;font-size:1.05rem;color:var(--ink)}
+.nav-logo-name span{color:var(--purple)}
+.nav-links{display:flex;align-items:center;gap:28px}
+.nav-links a{font-family:var(--fu);font-size:.82rem;font-weight:500;color:var(--ink3);position:relative;transition:color .3s}
+.nav-links a::after{content:"";position:absolute;bottom:-4px;left:0;width:0;height:2px;background:var(--purple);border-radius:99px;transition:width .3s}
+.nav-links a:hover{color:var(--purple)}
+.nav-links a:hover::after{width:100%}
+.nav-links a.active{color:var(--purple)}
+.nav-links a.active::after{width:100%}
+.nav-cta-link{padding:10px 22px;border-radius:999px;font-family:var(--fu)!important;font-weight:600!important;font-size:.82rem!important;color:#fff!important;background:linear-gradient(135deg,var(--pl),var(--pd))!important;box-shadow:0 8px 24px rgba(91,61,245,.35)}
+.nav-cta-link:hover{color:#fff!important}
+.nav-cta-link::after{display:none!important}
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px;background:none;border:none}
+.hamburger span{width:22px;height:2.5px;background:var(--ink);border-radius:99px}
+@media(max-width:768px){.nav-links{display:none}.hamburger{display:flex}}
+footer{background:linear-gradient(160deg,#211B3A,#17122B);color:rgba(255,255,255,.82);padding:clamp(56px,8vh,90px) clamp(20px,6vw,40px) 40px}
+.footer-grid{max-width:var(--maxw);margin:0 auto;display:grid;grid-template-columns:1.8fr 1fr 1fr 1.2fr;gap:40px}
+.footer-brand h3{font-family:var(--fd);font-weight:700;font-size:1.6rem;color:#fff}
+.footer-brand p{margin-top:12px;font-size:.92rem;color:rgba(255,255,255,.6)}
+.footer-col h4{font-family:var(--fu);font-weight:600;font-size:.76rem;letter-spacing:.18em;text-transform:uppercase;color:var(--p300);margin-bottom:16px}
+.footer-col a{display:block;font-size:.92rem;color:rgba(255,255,255,.65);margin-bottom:10px;transition:color .3s}
+.footer-col a:hover{color:var(--p200,#C9BEFF)}
+.footer-social{display:flex;gap:12px;margin-top:18px}
+.footer-social .social-btn{width:46px;height:46px;border-radius:13px;display:flex;align-items:center;justify-content:center;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);color:#fff;box-shadow:none;transition:background .3s,transform .3s,color .3s,border-color .3s}
+.footer-social .social-btn svg{width:19px;height:19px;display:block}
+.footer-social .social-btn:hover{background:var(--purple);border-color:var(--purple);color:#fff;transform:translateY(-3px)}
+.footer-bottom{max-width:var(--maxw);margin:36px auto 0;padding-top:22px;border-top:1px solid rgba(255,255,255,.1);text-align:center;font-family:var(--fu);font-size:.8rem;color:rgba(255,255,255,.5)}
+@media(max-width:768px){.footer-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:480px){.footer-grid{grid-template-columns:1fr}}
+.nav-item{position:relative;display:flex;align-items:center}
+.nav-links .nav-drop-trigger{display:inline-flex;align-items:center;gap:6px}
+.nav-caret{width:10px;height:7px;flex:none;transition:transform .3s}
+.nav-item.has-drop:hover .nav-caret,.nav-item.has-drop:focus-within .nav-caret{transform:rotate(180deg)}
+.nav-drop{position:absolute;top:100%;left:50%;transform:translate(-50%,8px);padding-top:20px;min-width:232px;opacity:0;visibility:hidden;pointer-events:none;transition:opacity .28s,transform .28s,visibility .28s;z-index:101}
+.nav-item.has-drop:hover .nav-drop,.nav-item.has-drop:focus-within .nav-drop{opacity:1;visibility:visible;pointer-events:auto;transform:translate(-50%,0)}
+.nav-drop-inner{padding:10px;border-radius:16px;background:rgba(255,255,255,.98);border:1px solid rgba(91,61,245,.1);box-shadow:0 22px 46px -18px rgba(91,61,245,.45);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px)}
+.nav-links .nav-drop a{display:block;padding:11px 14px;border-radius:11px;font-family:var(--fu);font-size:.82rem;font-weight:500;color:var(--ink3);white-space:nowrap;text-decoration:none;transition:background .25s,color .25s}
+.nav-links .nav-drop a::after{display:none!important}
+.nav-links .nav-drop a:hover,.nav-links .nav-drop a.active{background:linear-gradient(135deg,rgba(109,75,255,.12),rgba(69,38,201,.08));color:var(--purple)}
+@media(max-width:768px){
+.nav-item{flex-direction:column;align-items:center;gap:12px;width:100%}
+.nav-caret{display:none}
+.nav-drop{position:static;transform:none;opacity:1;visibility:visible;pointer-events:auto;padding-top:0;min-width:0;width:100%}
+.nav-drop-inner{padding:6px;background:rgba(91,61,245,.05);border-color:rgba(91,61,245,.12);box-shadow:none;backdrop-filter:none;-webkit-backdrop-filter:none}
+.nav-links .nav-drop a{text-align:center}
+}
+.nav-drop-inner a.all{border-top:1px solid rgba(91,61,245,.12);margin-top:7px;padding-top:13px;font-weight:700;color:var(--purple)}
+/* ===== /UNIFIED HEADER / FOOTER SYSTEM ===== */
+
+/* ===== UNIFIED HEADER / FOOTER  (Resume page bindings) ===== */
+:root{--purple:#5B3DF5;--pl:#6D4BFF;--pd:#4526C9;--p200:#C9BEFF;--p300:#B9A9FF;--ink:#1E1B2E;--ink3:#6E6885;--fd:'Playfair Display',Georgia,serif;--fu:'Montserrat',sans-serif;--fb:'Poppins',sans-serif}
+body{padding-top:71px}
+nav.no-print{top:71px}
+.nav a,.footer-col a,.footer-social a{text-decoration:none}
+footer{margin-top:0;font-family:var(--fb);line-height:1.7}
+.resume-crumbs{max-width:900px;margin:0 auto;padding:14px clamp(16px,4vw,28px) 0;display:flex;flex-wrap:wrap;align-items:center;gap:8px;font-family:'Montserrat',system-ui,sans-serif;font-size:.78rem;font-weight:500;color:#6E6885}
+.resume-crumbs a{color:#5B3DF5;text-decoration:none}
+.resume-crumbs a:hover{color:#4526C9;text-decoration:underline}
+.resume-crumbs i{font-style:normal;color:#8A83A0}
+.resume-crumbs span[aria-current]{color:#1E1B2E;font-weight:600}
+@media print{.resume-crumbs{display:none!important}}
+@media print{.nav,footer{display:none!important}body{padding-top:0!important}}
+/* ===== /UNIFIED HEADER / FOOTER  (Resume page bindings) ===== */
+
+</style>
+<!-- SF:HEAD -->
+<link rel="canonical" href="https://sheikhfaiz.info/Resume.html">
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+<meta name="author" content="Sheikh Faiz">
+<meta name="geo.region" content="IN-MH">
+<meta name="geo.placename" content="Thane, Mumbai, Maharashtra">
+<meta name="theme-color" content="#5B3DF5">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="48x48" href="favicon-48x48.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+<link rel="alternate" type="text/plain" href="llms.txt" title="LLM summary">
+<meta property="og:type" content="profile">
+<meta property="og:url" content="https://sheikhfaiz.info/Resume.html">
+<meta property="og:site_name" content="Sheikh Faiz">
+<meta property="og:locale" content="en_IN">
+<meta property="og:image" content="https://sheikhfaiz.info/og-image.png">
+<meta property="og:image:alt" content="Sheikh Faiz — Performance Marketing &amp; Digital Growth Professional, Mumbai India">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:type" content="image/png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Sheikh Faiz | ATS-Friendly Resume">
+<meta name="twitter:description" content="Digital Marketing &amp; Growth Manager specialising in performance marketing, Google Ads, Meta Ads, SEO, lead generation, marketing automation and AI-powered campaigns.">
+<meta name="twitter:image" content="https://sheikhfaiz.info/og-image.png">
+<meta name="twitter:image:alt" content="Sheikh Faiz — Performance Marketing &amp; Digital Growth Professional, Mumbai India">
+<!-- /SF:HEAD -->
+<!-- SF:SCHEMA -->
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://sheikhfaiz.info/#sheikh-faiz","name":"Sheikh Faiz","givenName":"Sheikh","familyName":"Faiz","url":"https://sheikhfaiz.info/","description":"Sheikh Faiz is a Digital Marketing & Growth Manager based in Mumbai, Maharashtra, India, working across performance marketing, Google Ads, Meta Ads, search engine optimisation, lead generation, marketing automation and AI-powered campaigns.","disambiguatingDescription":"Digital Marketing & Growth Manager based in Mumbai, Maharashtra, India; leads digital marketing and growth for Audentia Research and Audentia Group.","jobTitle":"Digital Marketing & Growth Manager","image":"https://sheikhfaiz.info/images/Sheikh-Faiz.png","email":"mailto:sheikhfaiz078@gmail.com","telephone":"+91-99676-29945","address":{"@type":"PostalAddress","addressLocality":"Mumbai","addressRegion":"Maharashtra","addressCountry":"IN"},"worksFor":{"@type":"Organization","name":"Audentia Research","url":"https://audentiaresearch.com/"},"hasOccupation":{"@type":"Occupation","name":"Digital Marketing & Growth Manager","occupationLocation":[{"@type":"City","name":"Mumbai"}],"skills":"Google Ads, Meta Ads, LinkedIn Ads, X (Twitter) Ads, Telegram Ads, ChatGPT Ads, SEO, conversion rate optimisation, marketing automation, AI-powered campaign workflows, generative AI for marketing, web design, GA4 and Google Tag Manager analytics"},"alumniOf":[{"@type":"CollegeOrUniversity","name":"University of Mumbai"},{"@type":"EducationalOrganization","name":"Digital Trainee"},{"@type":"EducationalOrganization","name":"Oriental Group of Institutes"}],"hasCredential":[{"@type":"EducationalOccupationalCredential","name":"SEO Certification"},{"@type":"EducationalOccupationalCredential","name":"Marketing Automation Foundations"},{"@type":"EducationalOccupationalCredential","name":"AI-Powered Performance Ads Certification"},{"@type":"EducationalOccupationalCredential","name":"Website Design Using WordPress"}],"knowsAbout":["Performance Marketing","Digital Marketing","Digital Marketing Management","Generative AI for Marketing","AI-Powered Advertising","Google Ads","Meta Ads","LinkedIn Ads","LinkedIn Marketing","X Ads","Twitter Ads","Telegram Ads","ChatGPT Ads","Paid Media","Web Design","Lead Generation","B2B Lead Generation","Search Engine Optimization","Technical SEO","Local SEO","Keyword Research","Conversion Rate Optimization","Marketing Automation","WhatsApp Marketing","Email Marketing","Google Analytics 4","Google Tag Manager","Meta Conversions API","Funnel Analytics","Landing Page Optimization","Growth Marketing","Digital Growth Strategy","UI/UX Design"],"knowsLanguage":["en"],"sameAs":["https://www.linkedin.com/in/sheikh-faiz-143717261/","https://medium.com/@sheikhfaiz078","https://sheikhfaiz07.blogspot.com/","https://www.quora.com/profile/Sheikh-Faiz-33","https://www.reddit.com/user/Sheikhfaiz078/","https://www.facebook.com/profile.php?id=100018114374107","https://www.instagram.com/unknown.ladkaa/","https://x.com/unknownboyalam"],"mainEntityOfPage":{"@id":"https://sheikhfaiz.info/who-is-sheikh-faiz.html#webpage"}},{"@type":"WebSite","@id":"https://sheikhfaiz.info/#website","url":"https://sheikhfaiz.info/","name":"Sheikh Faiz","description":"Official website of Sheikh Faiz, performance marketing and digital growth professional.","publisher":{"@id":"https://sheikhfaiz.info/#sheikh-faiz"},"inLanguage":"en-IN"},{"@type":"ProfilePage","@id":"https://sheikhfaiz.info/Resume.html#webpage","url":"https://sheikhfaiz.info/Resume.html","name":"Sheikh Faiz — Resume","isPartOf":{"@id":"https://sheikhfaiz.info/#website"},"about":{"@id":"https://sheikhfaiz.info/#sheikh-faiz"},"inLanguage":"en-IN","breadcrumb":{"@id":"https://sheikhfaiz.info/Resume.html#breadcrumb"},"mainEntity":{"@id":"https://sheikhfaiz.info/#sheikh-faiz"},"datePublished":"2026-09-05","dateModified":"2026-09-10","primaryImageOfPage":"https://sheikhfaiz.info/og-image.png"},{"@type":"BreadcrumbList","@id":"https://sheikhfaiz.info/Resume.html#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://sheikhfaiz.info/"},{"@type":"ListItem","position":2,"name":"Resume","item":"https://sheikhfaiz.info/Resume.html"}]}]}</script>
+<!-- /SF:SCHEMA -->
+</head>
+<body>
+
+<nav class="nav" id="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo" aria-label="Sheikh Faiz — home">
+      <div class="nav-logo-mark" aria-hidden="true">SF</div>
+      <div class="nav-logo-name">Sheikh<span>Faiz</span></div>
+    </a>
+    <div class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <div class="nav-item has-drop">
+        <a href="about.html" class="nav-drop-trigger">About<svg class="nav-caret" viewBox="0 0 12 8" fill="none" aria-hidden="true"><path d="M1 1.5L6 6.5L11 1.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></a>
+        <div class="nav-drop">
+          <div class="nav-drop-inner">
+            <a href="who-is-sheikh-faiz.html">Who Is Sheikh Faiz</a>
+          </div>
+        </div>
+      </div>
+      <div class="nav-item has-drop">
+        <a href="services.html" class="nav-drop-trigger">Services<svg class="nav-caret" viewBox="0 0 12 8" fill="none" aria-hidden="true"><path d="M1 1.5L6 6.5L11 1.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></a>
+        <div class="nav-drop">
+          <div class="nav-drop-inner">
+            <a href="performance-marketing.html">Performance Marketing</a><a href="google-ads.html">Google Ads</a><a href="meta-ads.html">Meta Ads</a><a href="chatgpt-ads.html">ChatGPT Ads</a><a href="linkedin-marketing.html">LinkedIn Marketing</a><a href="email-whatsapp-marketing.html">Email &amp; WhatsApp</a><a href="seo.html">SEO</a><a href="ui-ux.html">UI/UX Design</a><a href="services.html" class="all">All Services</a>
+          </div>
+        </div>
+      </div>
+      <a href="projects.html">Projects</a>
+      <a href="case-studies.html">Case Studies</a>
+      <a href="contact.html" class="nav-cta-link">Contact</a>
+    </div>
+    <div class="hamburger" id="hamburger" aria-label="Open menu"><span></span><span></span><span></span></div>
+  </div>
+</nav>
+
+
+    <nav class="no-print bg-white border-b border-gray-200 sticky top-0 z-40 shadow-sm py-3">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-center items-center">
+                <button onclick="handleDownloadPDF()" class="px-8 py-3 border border-transparent text-[15px] font-bold uppercase tracking-widest rounded-full text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-4 focus:ring-indigo-300 transition-all shadow-md hover:shadow-lg flex items-center cursor-pointer">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                    </svg>
+                    Download PDF
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <div id="toast">Generating PDF... Please wait.</div>
+
+    <nav class="resume-crumbs" aria-label="Breadcrumb">
+  <a href="index.html">Home</a><i>&rsaquo;</i><span aria-current="page">Resume</span>
+</nav>
+<main class="w-full flex justify-center pb-12">
+        <article class="resume-page" id="resume-content">
+            
+            <header class="text-center mb-2">
+                <h1 class="text-2xl font-bold text-gray-900 tracking-tight uppercase" style="letter-spacing: 0.02em;">Sheikh Faiz</h1>
+                <h2 class="text-[10pt] font-semibold text-indigo-800 uppercase mt-0.5">Digital Marketing &amp; Growth Manager</h2>
+                <p class="text-[8pt] text-gray-600 mt-0.5 font-medium">Performance Marketing &middot; SEO &middot; Google Ads &amp; Meta Ads &middot; Lead Generation &amp; Marketing Automation &middot; Frontend &amp; UI Design</p>
+                <div class="text-[8.5pt] text-gray-600 mt-1 font-medium">
+                    Mumbai / Thane, Maharashtra | <a href="tel:+919967629945" class="link-hover">+91 99676 29945</a> | <a href="mailto:sheikhfaiz078@gmail.com" class="link-hover">sheikhfaiz078@gmail.com</a>
+                </div>
+                <div class="text-[8.5pt] text-gray-600 mt-0.5 font-medium">
+                    <a href="https://in.linkedin.com/in/sheikh-faiz-143717261" target="_blank" class="link-hover">LinkedIn</a> | 
+                    <a href="https://sheikhfaiz.info/" target="_blank" class="link-hover">Portfolio: sheikhfaiz.info</a>
+                </div>
+            </header>
+
+            <section>
+                <h2 class="section-header">Professional Summary</h2>
+                <p class="resume-text text-justify">
+                    Results-driven Digital Marketing &amp; Growth Manager with 3+ years of hands-on experience across performance advertising, SEO, lead generation, marketing automation, conversion optimization and UI design. Currently leads digital marketing and growth initiatives for Audentia Research and Audentia Group, spanning performance marketing, web and landing page design, CRO and AI-powered campaign workflows. Proven track record of building end-to-end customer acquisition funnels across Google Ads, Meta Ads and WhatsApp automation — delivering a 40% increase in qualified leads, a 30% reduction in CPC, and ₹10L+ in advertising spend managed across multiple digital brands.
+                </p>
+            </section>
+
+            <section>
+                <h2 class="section-header">Key Achievements</h2>
+                <ul class="resume-text bullet-list grid grid-cols-2 gap-x-4 gap-y-0.5">
+                    <li><strong>+40%</strong> increase in qualified leads generated.</li>
+                    <li><strong>-30%</strong> reduction in overall Cost Per Click (CPC).</li>
+                    <li><strong>₹10L+</strong> advertising spend managed across Google &amp; Meta.</li>
+                    <li><strong>70–80%</strong> engagement on WhatsApp drip campaigns.</li>
+                    <li><strong>4</strong> brand websites designed and built end to end.</li>
+                    <li><strong>AI-powered</strong> campaign and creative workflows deployed.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2 class="section-header">Core Skills</h2>
+                <div class="resume-text">
+                    <p><strong>Performance Marketing:</strong> Google Ads, Meta Ads, LinkedIn Ads, X (Twitter) Ads, Telegram Ads, ChatGPT Ads, Paid Media, Campaign & Budget Management, Lead Generation, CPL/CPC Optimization, ROAS, Audience Targeting, Retargeting, A/B Testing.</p>
+                    <p class="mt-0.5"><strong>Digital Growth & Automation:</strong> Growth Strategy, Funnel Analytics, SEO (On-Page, Technical), Keyword Research, WhatsApp Automation, Drip Campaigns, Lead Nurturing, CRM Management.</p>
+                    <p class="mt-0.5"><strong>AI & Marketing Management:</strong> Generative AI for Marketing, AI-Assisted Campaign Research & Creative Development, Marketing Management, Experimentation Roadmaps, Cross-Team Campaign Coordination.</p>
+                    <p class="mt-0.5"><strong>Design & Development:</strong> UI/UX Design, Web & Landing Page Design, Conversion Rate Optimization (CRO), Responsive Web Design, Frontend Development.</p>
+                </div>
+            </section>
+
+            <section>
+                <h2 class="section-header">Professional Experience</h2>
+                
+                <!-- Role 1 -->
+                <div class="mb-2">
+                    <div class="flex justify-between items-baseline gap-2">
+                        <div class="job-title">Digital Marketing &amp; Growth Manager</div>
+                        <div class="resume-text text-[8.5pt] font-semibold whitespace-nowrap">Jan 2026 &ndash; Present</div>
+                    </div>
+                    <div class="company-name text-[9pt] mb-0.5">Audentia Research / Audentia Group (<a href="https://audentiaresearch.com/" target="_blank" class="link-hover text-indigo-700">audentiaresearch.com</a>) | Mumbai, Maharashtra</div>
+                    <ul class="resume-text bullet-list">
+                        <li>Lead digital marketing and growth initiatives across performance marketing, web design, conversion optimization and AI-powered campaigns, aligned to brand positioning, audience growth and lead-generation goals.</li>
+                        <li>Plan, launch and optimize performance marketing campaigns across digital channels with a focus on acquisition, qualified leads and measurable, scalable growth.</li>
+                        <li>Own website, landing page and digital experience initiatives end to end — combining web design, UX principles and conversion-focused thinking, including a 19-page executive search website delivered from scratch.</li>
+                        <li>Develop AI-powered campaigns and AI-assisted workflows for campaign research, ideation, creative development and content execution, and drive experimentation across ads, messaging, landing pages and conversion journeys.</li>
+                        <li>Analyze campaign and website performance data to identify optimization opportunities, and translate business requirements into digital strategies and actionable marketing initiatives.</li>
+                    </ul>
+                </div>
+
+                <!-- Role 2 -->
+                <div class="mb-2">
+                    <div class="flex justify-between items-baseline gap-2">
+                        <div class="job-title">Digital Marketing Manager</div>
+                        <div class="resume-text text-[8.5pt] font-semibold whitespace-nowrap">Jul 2024 &ndash; Dec 2025</div>
+                    </div>
+                    <div class="company-name text-[9pt] mb-0.5">Educativo (<a href="https://educativo.in/" target="_blank" class="link-hover text-indigo-700">educativo.in</a>) | Thane, Maharashtra</div>
+                    <ul class="resume-text bullet-list">
+                        <li>Drove business growth through high-performance Google Ads and Meta Ads campaigns, planning and managing paid media budgets with a focus on lead quality and ROI.</li>
+                        <li>Improved lead volume by 40% and reduced CPC by 30% through continuous optimization, A/B testing, audience segmentation and retargeting.</li>
+                        <li>Built AI-driven and WhatsApp automation workflows for lead nurturing, executing drip campaigns that achieved 70–80% engagement and conversion rates.</li>
+                        <li>Optimized landing page UI and funnel structure, and analyzed performance in GA4 and Google Tag Manager to implement data-driven growth strategies across ₹10L+ in managed ad spend.</li>
+                    </ul>
+                </div>
+
+                <!-- Role 3 -->
+                <div class="mb-2">
+                    <div class="flex justify-between items-baseline gap-2">
+                        <div class="job-title">Digital Marketing Executive</div>
+                        <div class="resume-text text-[8.5pt] font-semibold whitespace-nowrap">May 2023 &ndash; Jun 2024</div>
+                    </div>
+                    <div class="company-name text-[9pt] mb-0.5">Averlon Enterprise Solutions Private Limited (<a href="https://rajlaxmiworld.com/" target="_blank" class="link-hover text-indigo-700">rajlaxmiworld.com</a>) | Thane, Maharashtra</div>
+                    <ul class="resume-text bullet-list">
+                        <li>Managed SEO, Google Ads and social media campaigns, conducting keyword research and competitor analysis to guide channel strategy.</li>
+                        <li>Created and optimized ad creatives and landing pages, and handled blogging, content strategy and on-page SEO.</li>
+                        <li>Improved website traffic and lead flow across organic and paid channels, monitoring campaign performance and producing regular reports for stakeholders.</li>
+                    </ul>
+                </div>
+
+                <!-- Role 4 -->
+                <div class="mb-2">
+                    <div class="flex justify-between items-baseline gap-2">
+                        <div class="job-title">Digital Marketing Intern</div>
+                        <div class="resume-text text-[8.5pt] font-semibold whitespace-nowrap">Jan 2023 &ndash; Apr 2023</div>
+                    </div>
+                    <div class="company-name text-[9pt] mb-0.5">Digitize Brand Hub (India) Pvt. Ltd. (<a href="https://digitizebrand.com/" target="_blank" class="link-hover text-indigo-700">digitizebrand.com</a>) | Thane, Maharashtra</div>
+                    <ul class="resume-text bullet-list">
+                        <li>Assisted with SEO audits, website optimization and the setup of Google Ads and Meta Ads campaigns.</li>
+                        <li>Supported analytics dashboards and reporting, learned conversion tracking and remarketing setup, and contributed to content creation and competitor research.</li>
+                    </ul>
+                </div>
+
+                <!-- Role 5 -->
+                <div class="mb-1">
+                    <div class="flex justify-between items-baseline gap-2">
+                        <div class="job-title">Client Relationship Manager</div>
+                        <div class="resume-text text-[8.5pt] font-semibold whitespace-nowrap">Nov 2021 &ndash; Dec 2022</div>
+                    </div>
+                    <div class="company-name text-[9pt] mb-0.5">Nidhi Research Firm | Kalyan, Maharashtra</div>
+                    <ul class="resume-text bullet-list">
+                        <li>Managed client onboarding, relationship management and retention strategy, building trust and long-term engagement while handling escalations.</li>
+                        <li>Consistently met assigned targets and received performance awards, coordinating between clients, analysts and internal teams.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section>
+                <h2 class="section-header">Selected Projects</h2>
+                
+                <!-- Project 1 -->
+                <div class="mb-1.5">
+                    <div class="job-title">Audentia Research — Executive Search Website &amp; Digital Growth (<a href="https://audentiaresearch.com/" target="_blank" class="link-hover text-indigo-700">audentiaresearch.com</a>)</div>
+                    <ul class="resume-text bullet-list">
+                        <li>Designed and built a 19-page executive search website from scratch with a locked design system, normalized headers and footers, and conversion-focused layouts, then layered performance campaigns and AI-assisted workflows on top.</li>
+                    </ul>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="mb-1.5">
+                    <div class="job-title">YoungAIChamps – Website Frontend & UI (<a href="https://youngaichamps.com" target="_blank" class="link-hover text-indigo-700">youngaichamps.com</a>)</div>
+                    <ul class="resume-text bullet-list">
+                        <li>Designed and developed the frontend and UI experience for an EdTech platform focused on AI and coding programs for children, supporting marketing campaigns and lead generation funnels.</li>
+                    </ul>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="mb-1.5">
+                    <div class="job-title">MBA Ninja – Frontend & UI Designer (<a href="https://www.mbaninja.in/" target="_blank" class="link-hover text-indigo-700">mbaninja.in</a>)</div>
+                    <ul class="resume-text bullet-list">
+                        <li>Designed and developed the mobile-first frontend/UI experience for an online MBA discovery and comparison platform with optimized CTA placements.</li>
+                    </ul>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="mb-1.5">
+                    <div class="job-title">Strong Nation – Digital Growth & Marketing Integration (<a href="https://strongnation.in" target="_blank" class="link-hover text-indigo-700">strongnation.in</a>)</div>
+                    <ul class="resume-text bullet-list">
+                        <li>Executed digital growth initiatives and user acquisition funnels to expand platform engagement and high-intent traffic pathways.</li>
+                    </ul>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="mb-1.5">
+                    <div class="job-title">Avon Fitness – Digital Growth & Marketing Integration (<a href="https://www.avonfitness.co/" target="_blank" class="link-hover text-indigo-700">avonfitness.co</a>)</div>
+                    <ul class="resume-text bullet-list">
+                        <li>Contributed to digital marketing campaigns, lead funnel execution, and product showcase strategies for fitness equipment promotion.</li>
+                    </ul>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="mb-1.5">
+                    <div class="job-title">Google Ads Lead Generation Funnel — Educativo (<a href="https://educativo.in/" target="_blank" class="link-hover text-indigo-700">educativo.in</a>)</div>
+                    <ul class="resume-text bullet-list">
+                        <li>Strategized an end-to-end customer acquisition funnel utilizing Google Ads and optimized landing pages, contributing to a 40% increase in qualified leads.</li>
+                    </ul>
+                </div>
+
+                <!-- Project 7 -->
+                <div class="mb-1.5">
+                    <div class="job-title">WhatsApp Automation & Drip Campaign System — Educativo (<a href="https://educativo.in/" target="_blank" class="link-hover text-indigo-700">educativo.in</a>)</div>
+                    <ul class="resume-text bullet-list">
+                        <li>Integrated WhatsApp marketing automation for lead nurturing and automated follow-ups, achieving up to 80% response rates.</li>
+                    </ul>
+                </div>
+
+                <!-- Project 8 -->
+                <div class="mb-0.5">
+                    <div class="job-title">Organic Traffic Growth & Portfolio Strategy (<a href="https://sheikhfaiz.info/" target="_blank" class="link-hover text-indigo-700">sheikhfaiz.info</a>)</div>
+                    <ul class="resume-text bullet-list">
+                        <li>Engineered personal branding portfolio and executed technical SEO audits to improve search rankings and organic lead pipelines.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section>
+                <h2 class="section-header">Education</h2>
+                
+                <div class="resume-text mb-1 flex justify-between items-baseline gap-2">
+                    <div class="font-semibold text-gray-900">Bachelor of Commerce (B.Com) | University of Mumbai</div>
+                    <div class="text-[8.5pt] font-semibold whitespace-nowrap">2020 &ndash; 2023</div>
+                </div>
+
+                <div class="resume-text mb-1 flex justify-between items-baseline gap-2">
+                    <div class="font-semibold text-gray-900">Digital Marketing (Business &amp; Marketing Operations), A+ Grade | Digital Trainee</div>
+                    <div class="text-[8.5pt] font-semibold whitespace-nowrap">Jun 2024 &ndash; Dec 2024</div>
+                </div>
+
+                <div class="resume-text mb-1 flex justify-between items-baseline gap-2">
+                    <div class="font-semibold text-gray-900">Tally+ GST, Accounting &amp; Finance | Disha Computer Institute</div>
+                    <div class="text-[8.5pt] font-semibold whitespace-nowrap">Sep 2023 &ndash; Apr 2024</div>
+                </div>
+
+                <div class="resume-text mb-1 flex justify-between items-baseline gap-2">
+                    <div class="font-semibold text-gray-900">Diploma in Computer Application (Data Entry / Microcomputer Applications) | NCRT Institute of Computer</div>
+                    <div class="text-[8.5pt] font-semibold whitespace-nowrap">Sep 2019 &ndash; Feb 2020</div>
+                </div>
+
+                <div class="resume-text flex justify-between items-baseline gap-2">
+                    <div class="font-semibold text-gray-900">Intermediate, Commerce | Oriental Group of Institutes</div>
+                    <div class="text-[8.5pt] font-semibold whitespace-nowrap">2018 &ndash; 2020</div>
+                </div>
+            </section>
+
+            <section>
+                <h2 class="section-header">Tools & Technologies</h2>
+                <p class="resume-text">
+                    <strong>Marketing &amp; Analytics:</strong> Google Ads, Meta Ads Manager, LinkedIn Campaign Manager, X Ads Manager, Telegram Ads, ChatGPT Ads, GA4 (Google Analytics 4), Google Tag Manager, Google Search Console, WhatsApp Business API, CRM &amp; marketing automation platforms.<br>
+                    <strong>Development &amp; Design:</strong> Figma, Canva, WordPress, Elementor, HTML, CSS, JavaScript.<br>
+                    <strong>AI &amp; Productivity:</strong> Generative AI tools for campaign research, ad copy, creative development and content workflows.
+                </p>
+            </section>
+
+            <section>
+                <h2 class="section-header">Certifications</h2>
+                <p class="resume-text">
+                    SEO Certification &middot; Marketing Automation Foundations &middot; AI-Powered Performance Ads Certification &middot; Website Design Using WordPress &middot; Digital Marketing Training (A+ Grade), Digital Trainee
+                </p>
+            </section>
+
+        </article>
+    </main>
+
+    <script>
+        // Direct PDF download using html2pdf
+        function handleDownloadPDF() {
+            showToast('Generating PDF... Please wait.', 3000);
+            
+            const element = document.getElementById('resume-content');
+            
+            const opt = {
+                margin:       [4, 4, 4, 4],
+                filename:     'Sheikh_Faiz_Resume.pdf',
+                image:        { type: 'jpeg', quality: 0.98 },
+                html2canvas:  { scale: 2, useCORS: true, logging: false },
+                jsPDF:        { unit: 'mm', format: 'a4', orientation: 'portrait' },
+                pagebreak:    { mode: ['css', 'legacy'], avoid: ['section', 'li'] }
+            };
+
+            setTimeout(() => {
+                html2pdf().set(opt).from(element).save().then(() => {
+                    showToast('PDF downloaded successfully!', 2000);
+                }).catch(err => {
+                    console.error('PDF generation error:', err);
+                    showToast('Error generating PDF. Please try again.', 3000);
+                });
+            }, 300);
+        }
+
+        function showToast(message, duration) {
+            const toast = document.getElementById('toast');
+            toast.innerText = message;
+            toast.className = "show";
+            
+            setTimeout(() => {
+                toast.className = toast.className.replace("show", "");
+            }, duration);
+        }
+    </script>
+
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand"><h3>Sheikh Faiz</h3><p>Performance marketing, digital growth and conversion-focused UI/UX for businesses ready to make their next move clearer.</p><p style="margin-top:14px;font-size:.86rem;color:rgba(255,255,255,.45)">Diva, Thane, Maharashtra 400612</p></div>
+    <div class="footer-col"><h4>Quick Links</h4><a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a><a href="projects.html">Projects</a><a href="case-studies.html">Case Studies</a><a href="contact.html">Contact</a></div>
+    <div class="footer-col"><h4>Services</h4><a href="performance-marketing.html">Performance Marketing</a><a href="google-ads.html">Google Ads</a><a href="meta-ads.html">Meta Ads</a><a href="chatgpt-ads.html">ChatGPT Ads</a><a href="linkedin-marketing.html">LinkedIn Marketing</a><a href="email-whatsapp-marketing.html">Email &amp; WhatsApp</a><a href="seo.html">SEO</a><a href="ui-ux.html">UI/UX</a></div>
+    <div class="footer-col"><h4>Get In Touch</h4><a href="mailto:sheikhfaiz078@gmail.com">sheikhfaiz078@gmail.com</a><a href="tel:+919967629945">+91 99676 29945</a>
+      <div class="footer-social">
+        <a href="https://www.linkedin.com/in/sheikh-faiz-143717261/" target="_blank" rel="noopener" class="social-btn" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5A2.5 2.5 0 1 1 0 3.5a2.5 2.5 0 0 1 4.98 0ZM.5 8.5h4V24h-4V8.5Zm7 0h3.84v2.12h.05c.53-1 1.84-2.12 3.79-2.12 4.05 0 4.8 2.67 4.8 6.14V24h-4v-6.85c0-1.63-.03-3.73-2.27-3.73-2.27 0-2.62 1.78-2.62 3.61V24h-4V8.5Z"/></svg></a>
+        <a href="https://x.com/unknownboyalam" target="_blank" rel="noopener" class="social-btn" aria-label="X"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.9 2H22l-7.1 8.1L23.3 22h-6.6l-5.2-6.8L5.6 22H2.5l7.6-8.7L1 2h6.8l4.7 6.2L18.9 2Zm-1.1 18h1.8L7.3 3.9H5.4L17.8 20Z"/></svg></a>
+        <a href="https://www.instagram.com/unknown.ladkaa/" target="_blank" rel="noopener" class="social-btn" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2.5" y="2.5" width="19" height="19" rx="5.5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.6" cy="6.4" r="1.2" fill="currentColor" stroke="none"/></svg></a>
+        <a href="https://www.facebook.com/profile.php?id=100018114374107" target="_blank" rel="noopener" class="social-btn" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 8.5V6.8c0-.8.5-1 .9-1H17V2.3l-2.8-.02c-3.1 0-3.8 2.3-3.8 3.8v2.4H8.4v3.3h2v9.7h3.6v-9.7h2.6l.4-3.3H14Z"/></svg></a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">© 2026 Sheikh Faiz. All rights reserved.</div>
+</footer>
+</body>
+</html>
